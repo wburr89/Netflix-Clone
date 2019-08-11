@@ -1,0 +1,225 @@
+/* Global */
+* {
+    box-sizing: border-box;
+}
+body {
+    /* background: black; */
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+/* Header */
+#header {
+    background: black;
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+#header a {
+    font-family: Helvetica;
+}
+#header a:hover {
+    width: 20px;
+    border-bottom: 2px solid red;
+}
+.logo {
+    background: red;
+    display: inline-block;
+    margin-right: 25px;
+    padding: 20px;
+}
+.left-menu {
+    display: inline-block;
+}
+.left-menu ul {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+.left-menu ul li {
+    display: inline-block;
+    padding: 20px;
+}
+.left-menu ul li span {
+    color: red;
+}
+.left-menu ul li a {
+    color: white;
+}
+.right-menu {
+    display: inline-block;
+    float: right;
+}
+.right-menu ul {
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+.right-menu ul li {
+    display: inline-block;
+    padding: 20px;
+}
+.right-menu ul li a {
+    color: white;
+}
+.right-menu ul li .fa {
+    font-size: 20px;
+}
+/* Background image */
+#largeImage {
+    padding: 200px 25px;
+    background: -webkit-linear-gradient(90deg, rgba(231, 31, 17, .2 ) 0%, #000000 100%), url(public/images/infinitywar.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/* Description/Title box */
+.description-box {
+    width: 35%;
+    /* background: rgba(8, 8, 8, 0.3); */
+    border-radius: 5px;
+    padding: 10px;
+}
+.description-box h1 {
+    font-family: serif;
+    font-weight: 700;
+    color: white;
+    font-size: 60px;
+    margin: 0;
+}
+.description-box h3 {
+    font-family: helvetica;
+    font-weight: 400;
+    color: white;
+    margin: 0;
+    font-size: 25px;
+}
+
+.description-box h4 {
+    font-family: helvetica, sans-serif;
+    font-weight: 400;
+    margin-left: 12px;
+    color: white;
+}
+.description-box p {
+    margin-top: 25px;
+    font-size: 18px;
+    font-family: helvetica;
+    font-weight: 400;
+    color: white;
+}
+.button1 {
+    display: inline-block;
+    padding: 12px 40px;
+    background: red;
+    color: #fff;
+    cursor: pointer;
+}
+/* Trailer/My list buttons */
+.button1:hover {
+    background: rgba(0, 0, 0, .6);
+}
+.button2 {
+    display: inline-block;
+    padding: 12px 40px;
+    margin-left: 10px;
+    border: 2px solid #000;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+.button2:hover {
+    background: rgba(22, 22, 22, 0.6);
+}
+/* Suggested video section */
+#video-section {
+    width: 100%;
+    background: black;
+}
+.row {
+    width: 100%;
+    font-size: 0;
+}
+.video-boxes {
+    display: inline-block;
+    background: red;
+    width: 300px;
+    min-height: 150px;
+    font-size: 16px;
+    margin: 2.5%;
+    padding: 15px;
+}
+.video-boxes h4 {
+   color: white; 
+   text-align: center;
+}
+.video-boxes p {
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+}
+.video1 {
+    background: url(public/images/alice.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.video2 {
+    background: url(public/images/insidious.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.video3 {
+    background: url(public/images/Sully.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.video4 {
+    background:  url(public/images/space.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.video5 {
+    background:  url(public/images/deadpool.jpg) no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/* Mobile */
+@media screen and (max-width: 600px) {
+   
+    .video-boxes {
+        width: 95%;
+        margin: 2.5%;
+    }
+    .video-boxes h4 {
+        font-family: Helvetica;
+        font-weight: 100;
+        font-size: 17px;
+    }
+    .video-boxes p {
+        display: block;
+        font-weight: 300;
+        font-size: 20px;
+        color: white;
+    }
+    .description-box {
+        display: inline-block;
+        width: 100%;
+        margin: 2.5%;
+       }
+}
